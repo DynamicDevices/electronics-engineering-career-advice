@@ -1,6 +1,8 @@
 # Electronics Engineering Education & Career Guide 2025
-**Version 2.0**
-*For the Entrepreneurial Student: Building Your Future in Electronics*
+
+**Version 2.0** | *For the Entrepreneurial Student: Building Your Future in Electronics*
+
+---
 
 **Copyright © 2025 Dynamic Devices Ltd**  
 **Licensed under Creative Commons Attribution-NonCommercial 4.0 International License**
