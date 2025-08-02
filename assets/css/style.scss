@@ -22,11 +22,32 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-// Keep the minimal theme's clean typography with better contrast
+// Keep the minimal theme's clean typography with better contrast and larger fonts
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  line-height: 1.6;
+  line-height: 1.7;
   color: #24292e;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -35,6 +56,15 @@ h1, h2, h3, h4, h5, h6 {
 
 p, li, td, th {
   color: #24292e;
+  font-size: 18px;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
 }
 
 // Enhance tables with subtle styling
