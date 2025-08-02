@@ -16,8 +16,8 @@ collections:
     output: false
 
 # Plugins
-plugins:
-  - jekyll-relative-links
+# plugins:
+#   - jekyll-relative-links
 
 # Exclude from processing
 exclude:
