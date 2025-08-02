@@ -2359,7 +2359,7 @@ If electronics loses appeal during studies:
 ## **EXECUTIVE SUMMARY**
 
 ### **The Challenge**
-Electronics A-level is **not available** in Liverpool-area colleges. Your son needs alternative pathways to prepare for an electronics career whilst maintaining entrepreneurial opportunities.
+Your son wants to learn **hardware engineering** and **entrepreneurship**, but traditional electronics education in Liverpool is limited. He needs pathways that combine **practical hardware skills** with **business development opportunities** - preparing him to both build electronics and potentially start his own hardware business.
 
 ### **Five Strategic Pathways Identified**
 
