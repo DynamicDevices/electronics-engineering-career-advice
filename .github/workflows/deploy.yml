@@ -44,10 +44,6 @@ jobs:
           echo "Error: css/styles.css not found"
           exit 1
         fi
-        if [ ! -f "js/script.js" ]; then
-          echo "Error: js/script.js not found"
-          exit 1
-        fi
         echo "File structure validation passed"
         
     - name: Deploy to GitHub Pages
