@@ -102,6 +102,24 @@ tr:hover {
   overflow-x: auto;
 }
 
+// Force table display for all tables
+table {
+  display: table !important;
+  width: 100% !important;
+  border-collapse: collapse !important;
+}
+
+// Ensure table headers are visible
+th {
+  display: table-cell !important;
+  font-weight: 600 !important;
+}
+
+// Ensure table cells are visible
+td {
+  display: table-cell !important;
+}
+
 // Enhance code blocks
 .highlight {
   background: rgba(0, 0, 0, 0.05);
