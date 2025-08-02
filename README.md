@@ -1,4 +1,4 @@
-# Electronics Career Paths 2025
+# Electronics Careers 2025
 
 **Your roadmap to an electronics engineering career**  
 *Liverpool/North West England Focus*
