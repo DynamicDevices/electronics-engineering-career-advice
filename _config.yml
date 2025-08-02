@@ -8,23 +8,12 @@ markdown: kramdown
 highlighter: rouge
 permalink: pretty
 
-# Collections
-collections:
-  _layouts:
-    output: false
-  _includes:
-    output: false
-
-# Plugins
-# plugins:
-#   - jekyll-relative-links
+# Theme (GitHub Pages default)
+theme: jekyll-theme-cayman
 
 # Exclude from processing
 exclude:
-  - README.md
   - CONTEXT.md
   - DEPLOYMENT.md
   - LICENSE
-  - .github
-  - css
-  - js 
+  - .github 

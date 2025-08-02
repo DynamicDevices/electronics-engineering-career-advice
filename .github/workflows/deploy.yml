@@ -14,20 +14,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       
-    - name: Setup Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: '3.2'
-        bundler-cache: true
-        
-    - name: Install Jekyll
-      run: |
-        gem install jekyll bundler
-        
-    - name: Build Jekyll site
-      run: |
-        jekyll build --destination _site
-        
     - name: Check file structure
       run: |
         # Verify required files exist
@@ -35,12 +21,8 @@ jobs:
           echo "Error: _config.yml not found"
           exit 1
         fi
-        if [ ! -f "_layouts/default.html" ]; then
-          echo "Error: _layouts/default.html not found"
-          exit 1
-        fi
-        if [ ! -f "index.html" ]; then
-          echo "Error: index.html not found"
+        if [ ! -f "README.md" ]; then
+          echo "Error: README.md not found"
           exit 1
         fi
         echo "File structure validation passed"
@@ -50,7 +32,7 @@ jobs:
       if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: _site
+        publish_dir: .
         publish_branch: gh-pages
         force_orphan: true
       id: deploy
