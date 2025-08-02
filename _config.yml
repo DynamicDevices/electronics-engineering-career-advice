@@ -9,7 +9,7 @@ highlighter: rouge
 permalink: pretty
 
 # Theme (GitHub Pages default)
-theme: jekyll-theme-cayman
+theme: jekyll-theme-architect
 
 # Exclude from processing
 exclude:
