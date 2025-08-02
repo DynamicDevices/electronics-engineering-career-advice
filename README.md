@@ -1,23 +1,19 @@
-# Electronics Engineering Education & Career Guide 2025
+# Electronics Career Paths 2025
 
-**Version 2.0** | *For the Entrepreneurial Student: Building Your Future in Electronics*
+**Your roadmap to an electronics engineering career**  
+*Liverpool/North West England Focus*
 
 ---
 
-**Copyright © 2025 Dynamic Devices Ltd**  
-**Licensed under Creative Commons Attribution-NonCommercial 4.0 International License**
-
-**Document Status:** Final Version 2.0  
-**Last Updated:** 2nd August 2025  
-**Target Audience:** 16-year-old students and families planning electronics engineering careers  
-**Geographic Focus:** Liverpool/North West England  
+**Version 2.0** | **Last Updated:** 2nd August 2025  
+**Copyright © 2025 Dynamic Devices Ltd** | **CC BY-NC 4.0 License**
 
 ---
 
 ## **EXECUTIVE SUMMARY**
 
 ### **The Challenge**
-Electronics A-level is **not available** in Liverpool-area colleges. Your son needs alternative pathways to prepare for an electronics career whilst maintaining entrepreneurial opportunities.
+Electronics A-level is **not available** in Liverpool-area colleges. Your son needs alternative pathways to prepare for an electronics career whilst maintaining entrepreneurial oppRortunities.
 
 ### **Five Strategic Pathways Identified**
 
