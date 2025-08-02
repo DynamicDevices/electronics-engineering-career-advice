@@ -54,6 +54,17 @@ jobs:
         publish_branch: gh-pages
         force_orphan: true
       id: deploy
+      
+    - name: Show deployment URL
+      if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+      run: |
+        echo "🚀 Website deployed successfully!"
+        echo "🌐 Visit your site at: https://dynamicdevices.github.io/electronics-engineering-career-advice"
+        echo ""
+        echo "📝 Site details:"
+        echo "- Electronics Engineering Career Guide 2025"
+        echo "- Liverpool/North West England Focus"
+        echo "- Version 2.0 - Last Updated: 2nd August 2025"
         
     - name: Deploy status
       run: |
@@ -68,9 +79,6 @@ jobs:
           echo "- Version 2.0 - Last Updated: 2nd August 2025"
           echo ""
           echo "🔗 **Direct link:** https://dynamicdevices.github.io/electronics-engineering-career-advice"
-          echo ""
-          echo "::notice::🚀 **Website deployed successfully!**"
-          echo "::notice::🌐 **Visit:** https://dynamicdevices.github.io/electronics-engineering-career-advice"
         else
           echo "ℹ️ This is a pull request - no deployment needed"
         fi 
