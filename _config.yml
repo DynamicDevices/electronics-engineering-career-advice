@@ -1,0 +1,30 @@
+title: Electronics Engineering Education & Career Guide 2025
+description: Comprehensive guidance for 16-year-old students and families planning electronics engineering careers in Liverpool/North West England.
+url: "https://dynamicdevices.github.io"
+baseurl: "/electronics-engineering-career-advice"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Collections
+collections:
+  _layouts:
+    output: false
+  _includes:
+    output: false
+
+# Plugins
+plugins:
+  - jekyll-relative-links
+
+# Exclude from processing
+exclude:
+  - README.md
+  - CONTEXT.md
+  - DEPLOYMENT.md
+  - LICENSE
+  - .github
+  - css
+  - js 

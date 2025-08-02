@@ -14,34 +14,33 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
       with:
-        node-version: '18'
+        ruby-version: '3.2'
+        bundler-cache: true
         
-    - name: Install dependencies (if any)
+    - name: Install Jekyll
       run: |
-        # Add any build steps here if needed
-        echo "No build dependencies required for static site"
+        gem install jekyll bundler
         
-    - name: Validate HTML
+    - name: Build Jekyll site
       run: |
-        # Basic HTML validation
-        if ! grep -q "<!DOCTYPE html>" index.html; then
-          echo "Error: index.html is missing DOCTYPE declaration"
-          exit 1
-        fi
-        echo "HTML validation passed"
+        jekyll build --destination _site
         
     - name: Check file structure
       run: |
         # Verify required files exist
-        if [ ! -f "index.html" ]; then
-          echo "Error: index.html not found"
+        if [ ! -f "_config.yml" ]; then
+          echo "Error: _config.yml not found"
           exit 1
         fi
-        if [ ! -f "css/styles.css" ]; then
-          echo "Error: css/styles.css not found"
+        if [ ! -f "_layouts/default.html" ]; then
+          echo "Error: _layouts/default.html not found"
+          exit 1
+        fi
+        if [ ! -f "index.html" ]; then
+          echo "Error: index.html not found"
           exit 1
         fi
         echo "File structure validation passed"
@@ -51,7 +50,7 @@ jobs:
       if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: .
+        publish_dir: _site
         publish_branch: gh-pages
         force_orphan: true
         
