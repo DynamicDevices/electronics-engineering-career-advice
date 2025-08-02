@@ -74,11 +74,32 @@ table {
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 th {
   background: rgba(102, 126, 234, 0.1);
   color: #24292e;
+  font-weight: 600;
+}
+
+tr:hover {
+  background: rgba(102, 126, 234, 0.05);
+}
+
+// Ensure markdown tables render properly
+.markdown-body table {
+  display: table;
+  width: 100%;
+  overflow-x: auto;
 }
 
 // Enhance code blocks
